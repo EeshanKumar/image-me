@@ -1,33 +1,13 @@
 <html>
   <head>
   </head>
-  <body>
-    <button id="song">Click me!</button>
-    <p id="ajax-song"></p>
-
-    <button id="joke">Click for a funny</button>
-    <p id="ajax-joke"></p>
-
-    <button id="pizza">Whatever you are... Make me a pizza!</button>
-    <p id="ajax-pizza"></p>
-
-    <p>Piglatinify your name now!</p>
-    <form id="piglatin">
-      <label>First Name</label><input type="text" name="firstname">
-      <label>Last Name</label><input type="text" name="lastname">
-      <input type="submit" value="Piglatinify It"/>
+  <body style="width:50%; margin: 0 auto; text-align:center;">
+    <h1>Image me</h1>
+    <form id="imageMe">
+      <input type="text" name="imageTxt">
+      <input type="submit" value="Image It"/>
     </form>
-    <p>Your name in Pig Latin is:</p><p id="piglatinified"></p>
-
-    <p>Make your own pizza like an adult!</p>
-    <form id="makePizza">
-      <label>Crust</label><input type="text" name="crust">
-      <label>Cheese</label><input type="text" name="cheese">
-      <label>Toppings</label><input type="text" name="toppings">
-      <input type="submit" value="I'm an adult!"/>
-    </form>
-    <p>You did it!</p><p id="yourPizza"></p><p id="hubot"></p>
-    <img id="pizzaImg" width:200 height:200 src="" />
+    <img id="image" width:200 height:200 src="" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="script.js"></script>

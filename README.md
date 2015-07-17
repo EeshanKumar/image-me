@@ -1,1 +1,5 @@
-Simple server workshop for Foundations II, JavaScript
+Image Me
+A fun node server
+
+Technologies Utilized:
+Node, Express, Request, Grunt, JSHint, JavaScript
