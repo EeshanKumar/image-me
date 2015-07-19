@@ -1,5 +1,5 @@
 Image Me
-A fun node server
+A random image generator
 
 Technologies Utilized:
 Node, Express, Request, Grunt, JSHint, JavaScript

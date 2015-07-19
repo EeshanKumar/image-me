@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 
 app.post('/imageMe', function(req, res) {
   //Get random image from google
-  makePizza.search(req.body.imageTxt, res, function(res, response) {
+  imageMe.search(req.body.imageTxt, res, function(res, response) {
     //Return image source via json
     res.json(response);
   });
