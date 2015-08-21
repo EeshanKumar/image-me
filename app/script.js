@@ -1,15 +1,14 @@
 $(document).ready(function() {
-	//On makePizza form submit, do something
+	//On user submitting text
 	$("#imageMe").on("submit", function(e) {
+		//Prevent page refresh
 		e.preventDefault();
-		var imageTxt = $("input[name=imageTxt]").val();
-
-		$.post("makePizza", yourPizza, function(response) {
-			$("#yourPizza").text("You get a " + response.pizzaString);
-			$("#hubot").text("Hubot! Image me " + response.pizzaString);
-			$("#pizzaImg").attr("src", response.img);
-			$("#pizzaImg").width(200);
-			$("#pizzaImg").height(200);
+		var imageObj = { imageTxt: $("input[name=imageTxt]").val() };
+		console.log(imageObj);
+		//POST to server using ajax
+		$.post("imageMe", imageObj, function(res) {
+			$("#yourImage p").text("Here is your " + res.imageTxt);
+			$("#yourImage img").attr("src", res.img);
 		});
 	});
 });

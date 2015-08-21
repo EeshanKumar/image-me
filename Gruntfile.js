@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-jshint");
-  grunt.loadNpmTasks("grunt-jscs");
 
   var srcFiles = ["app/**/*.js", "server.js", "lib/**/*.js"];
 
@@ -10,14 +9,8 @@ module.exports = function(grunt) {
       options: {
         sub: true
       }
-    },
-    jscs: {
-      src: srcFiles,
-      options: {
-        config: '.jscsrc'
-      }
     }
   });
 
-  grunt.registerTask("default", [ "jshint", "jscs"]);
+  grunt.registerTask("default", [ "jshint"]);
 };
